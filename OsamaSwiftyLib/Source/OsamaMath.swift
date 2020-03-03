@@ -10,15 +10,15 @@ import Foundation
 
 
 
-public final class OsamaMath {
+@objc public final class OsamaMath: NSObject {
 
     let name = "SwiftyLib"
     
-    public func add(a: Int, b: Int) -> Int {
+    @objc public func add(a: Int, b: Int) -> Int {
         return a + b
     }
     
-    public func sub(a: Int, b: Int) -> Int {
+    @objc public func sub(a: Int, b: Int) -> Int {
         return a - b
     }
      
