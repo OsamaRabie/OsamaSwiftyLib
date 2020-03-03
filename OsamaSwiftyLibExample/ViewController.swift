@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import OsamaSwiftyLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let fromLib:OsamaMath = OsamaMath()
+        print(fromLib.add(a: 2, b: 4))
+        print(fromLib.sub(a: 2, b: 4))
     }
 
 
