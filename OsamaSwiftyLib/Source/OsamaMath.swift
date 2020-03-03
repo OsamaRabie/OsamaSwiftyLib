@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import Alamofire
 
 
 @objc public final class OsamaMath: NSObject {
@@ -20,6 +20,13 @@ import Foundation
     
     @objc public func sub(a: Int, b: Int) -> Int {
         return a - b
+    }
+    
+    
+    @objc public func callAlamoFireLibrary() {
+        AF.request("https://httpbin.org/get").response { response in
+            debugPrint(response)
+        }
     }
      
 }
