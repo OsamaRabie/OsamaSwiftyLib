@@ -21,5 +21,5 @@ public final class OsamaMath {
     public func sub(a: Int, b: Int) -> Int {
         return a - b
     }
-    
+     
 }
